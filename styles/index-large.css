@@ -26,6 +26,26 @@
         width: 50%;
     }
 
+    #section-contain {
+        width: 100%;
+        display: flex;
+       
+
+    }
+
+    .work {
+        width: 60%;
+        margin-left: 3%;
+        margin-right: 3%
+    }
+    .utah {
+        width: 30%
+    }
+    
+    footer {
+        width: 100%;
+    }
+
  
 
     

@@ -8,12 +8,16 @@
     <meta name="author" content="Emily Tuttle">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
     <script src="scripts/index.js" defer></script>
+
 </head>
 <body>
     <header class="header">
         <div class="top-header">
-            <img src="images/profile.jpeg" alt="Emily-Tuttle"id="profile-pic">
+            <img src="images/profile.jpeg" alt="Emily-Tuttle" id="profile-pic">
             <h1 class="title">Emily Tuttle</h1>
         </div>
        
@@ -21,7 +25,7 @@
         <a id="menu"></a>
         <nav>
             <ul class="navigation">
-                <li id="home-button"><a href="/index.html">Home</a></li>
+                <li id="home-button">Home</li>
                 <li id="chamber-button"><a>Chamber</a></li>
                 <li id="github-button"><a href="https://github.com/emilytuttle" target="_blank">GitHub Profile</a></li>
                 <li id="linkedin-button"><a href="https://www.linkedin.com/in/emily-tuttle-7124a121a/" target="_blank">LinkedIn</a></li>
@@ -30,18 +34,36 @@
         </nav>
        </header>
     <main>
-        <section class="body-section">
-            <h2 class="section-heading">Course Work</h2>
-        </section>
-        <section class="body-section">
-            <h2 class="section-heading">Saratoga Springs, Utah</h2>
-        </section>
+        <div id="section-contain">
+            <section class="body-section work">
+                <h2 class="section-heading ">Course Work</h2>
+                <div class="course-list">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                
+            </section>
+            <section class="body-section utah">
+                <h2 class="section-heading">Utah</h2>
+                <img src="images/utah.jpeg" alt="utah" id="utah-pic">
+                <p>Salt Lake City</p>
+            </section>
+        </div>
+       
         <section class="body-section">
             <h2 class="section-heading">Web and Computer Programming Certificate</h2>
+            <div class="cert-buttons">
+                <div id="all-button">All</div>
+                <div id="cse-button">CSE</div>
+                <div id="wdd-button">WDD</div>
+            </div>
         </section>
        
     </main>
-    <footer id="footer">
+    <footer>
         <p>&copy; <span id="currentyear"></span> 🌻 Emily Tuttle 🌻 Utah</p>
         <p>Last modified: <span id="lastModified"></span></p>
     </footer>

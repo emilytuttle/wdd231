@@ -5,6 +5,12 @@
     font-family: sans-serif;
 }
 
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 :root {
  font-size: 100%;
 }
@@ -130,11 +136,52 @@ nav a {
     padding: 20px
 }
 
-#footer {
-    position: absolute;
-    bottom: 0;
+
+
+main {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 90%
+}
+
+.section-heading {
+    color: white;
+    background-color:  rgba(2, 28, 145, 0.806);
     width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;   
+}
+
+#utah-pic {
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#section-contain {
+    width: 90%;
+}
+
+.work, .utah {
+    width: 100%
+}
+
+
+  main li {
+    list-style: circle;
   }
-
-
-  
