@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+ font-size: 100%;
+}
+
+header, footer {
+    color: white;
+    background-color: rgb(14, 108, 249);
+    height: 60px;
+    display: flex;
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    border-bottom: 2px black solid
+}
+
+nav {
+    list-style: none;
+    padding: 20px;
+    color: white
+
+   
+}
+
+nav a {
+    color: white
+}
+
+#menu {
+    font-size: 65px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#menu::before {
+    content:"≡";
+}
+
+.gone {
+   display: none;
+}
+
+
+.navigation {
+    list-style: none;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    
+}
+
+.navigation a:hover, .navigation a:active {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+  
+}
+
+.show li {
+    display: block;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.shown {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(14, 108, 249);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    padding: 20px;
+}
+
+#menu.show::before {
+    content: "X";
+    position:fixed;
+    right: 40px;
+    top: 10px;
+    z-index: 101;
+    font-size: 30px;
+}
+
+#menu.show:hover {
+    cursor: pointer;
+}
+
+
+/* Nav bar css is above here */
+
+.top-header {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(2, 28, 145, 0.806);
+    top: 0
+
+}
+
+#profile-pic {
+    width: 150px;
+    padding: 20px
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+  
