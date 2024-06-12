@@ -46,7 +46,22 @@
         width: 100%;
     }
 
+    #course-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
  
+      .course-item {
+        width: 30%;
+      }
+      .cert-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+    }
 
     
 }
