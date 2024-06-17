@@ -234,5 +234,6 @@ section {
   }
 
   #home-button {
-    color: rgb(4, 0, 112)
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
   }

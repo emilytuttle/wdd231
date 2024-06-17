@@ -106,10 +106,12 @@ const courses = [
     }
 ]
 
+const numberOfCreditsSpan = document.getElementById('num-credits')
 
 const container = document.getElementById('course-container')
 
 function displayCourses() {
+    let numberOfCredits = 0
     for (let i=0; i < courses.length; i++) {
         
         const courseItem = document.createElement('div')
@@ -119,14 +121,16 @@ function displayCourses() {
         <h2 class="course-title">${courses[i].subject} ${courses[i].number}</h2>
         `
         container.appendChild(courseItem)
+        numberOfCredits += courses[i].credits
+        console.log(`${numberOfCredits}`)
     }
-        
+    numberOfCreditsSpan.textContent = numberOfCredits
     }
 
 displayCourses()
 
 function filteredCourses(filter) {
-
+let numberOfCredits = 0
 for (let i=0; i < filter.length; i++) {
     const courseItem = document.createElement('div')
     courseItem.classList.add('course-item')
@@ -135,7 +139,10 @@ for (let i=0; i < filter.length; i++) {
      <h2 class="course-title">${filter[i].subject} ${filter[i].number}</h2>
     `
     container.appendChild(courseItem)
+    numberOfCredits += courses[i].credits
+    
 }
+    numberOfCreditsSpan.textContent = `${numberOfCredits}`    
 }
 
 const allButton = document.getElementById("all-button")
@@ -150,8 +157,13 @@ allButton.addEventListener('click', function() {
 cseButton.addEventListener('click', function() {
     container.innerHTML = ''
     filteredCourses(courses.filter((course) => course.subject === 'CSE') )
+    
+
 })
 wddButton.addEventListener('click', function() {
     container.innerHTML = ''
     filteredCourses(courses.filter((course) => course.subject === 'WDD') )
+    
 })
+
+
