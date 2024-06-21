@@ -91,7 +91,7 @@ const displayBusinessList = (members) => {
             <td>${member.name}</td>
             <td>${member.phone_number}</td>
             <td>${member.address}</td>
-            <td>${member.website_url}</td>
+            <td><a href="${member.website_url}">${member.website_url}</a></td>
         `
         list.appendChild(listItem)
     })
