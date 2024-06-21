@@ -1,0 +1,70 @@
+@media only screen and (min-width: 38rem) {
+    /* For nav bar */
+    #myButton {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: #1b1b46;
+    }
+
+    /* For Header (minus nav) */
+
+    #city-header {
+        flex-direction: row;
+    }
+
+    #city-title {
+        padding-left: 30px;
+    }
+
+    #american-fork {
+        font-size: 45px;
+    }
+
+    #hero-container {
+        height: auto;
+    }
+
+    /* home section */
+
+    #home-content-container {
+        flex-direction: row;
+    }
+
+    #hero-img {
+        height: auto;
+    }
+
+    #events {
+        width: 55%
+    }
+
+    #current-weather, #weather-forecast {
+        width: 25%;
+    }
+    .home-content-header {
+        text-align: left;
+    }
+
+    #current-weather-whole {
+        flex-direction: column;
+    }
+
+    /* Chamber members: */
+    #chamber-members {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
