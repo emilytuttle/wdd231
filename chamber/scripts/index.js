@@ -89,16 +89,23 @@ const displayBusinessesCard = (members) => {
 const weatherContainer = document.getElementById('current-weather-whole')
 
 const displayResults = (data) => {
-    const card = document.createElement('div')
-        
        currentTemp.textContent = data.main.temp;
        captionDesc.textContent = data.weather[0].main;
        
 }
 
+const displayForecastResults = (data) => {
+    today.textContent  = data.list[0].main.temp
+    tomorrow.textContent  = data.list[1].main.temp
+    twoDay.textContent  = data.list[2].main.temp
+}
+
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('#current-weather-desc');
+const today = document.getElementById("todays-temp")
+const tomorrow = document.getElementById("tomorrow-temp")
+const twoDay = document.getElementById("two-temp")
 
 const weatherUrl = 'https://api.openweathermap.org/data/2.5/weather?lat=40.377937&lon=-111.803055&appid=53778186298c1e2280bfff587895ed1d&units=imperial';
 
@@ -118,3 +125,21 @@ async function apiFetch() {
   }
   
   apiFetch();
+forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.377937&lon=-111.803055&appid=53778186298c1e2280bfff587895ed1d&units=imperial'
+// forecastUrl = 'api.openweathermap.org/data/2.5/forecast?lat=40.377937&lon=-111.803055&appid=53778186298c1e2280bfff587895ed1d&units=imperial'
+  async function forecastFetch() {
+    try {
+      const response = await fetch(forecastUrl);
+      if (response.ok) {
+        const data = await response.json();
+        console.log(data); // testing only
+        displayForecastResults(data); // uncomment when ready
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  forecastFetch();
