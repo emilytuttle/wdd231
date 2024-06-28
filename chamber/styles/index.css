@@ -259,3 +259,10 @@ footer p {
     margin: 20px
 }
 
+
+
+#event-list {
+    padding: 20px;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
