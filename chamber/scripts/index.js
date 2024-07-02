@@ -69,7 +69,7 @@ const displayBusinessesCard = (members) => {
         <div id="business-name">${member.name}</div>
         <hr>
         <div id="bus-info-and-pic">
-            <img src="${member.image}" alt="${member.name} Logo" width="80">
+            <img src="${member.image}" alt="${member.name} Logo" width="80" loading="lazy">
             <div id="bus-info">
             <p><span class="bold">Membership Level: </span>${member.membership_level}</p>
             <p><span class="bold">Phone: </span>${member.phone_number}</p>
