@@ -1,0 +1,59 @@
+@media only screen and (min-width: 38rem) {
+    /* For nav bar */
+    #myButton {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: #1b1b46;
+    }
+
+    /* For Header (minus nav) */
+
+    #city-header {
+        flex-direction: row;
+    }
+
+    #city-title {
+        padding-left: 30px;
+    }
+
+    #american-fork {
+        font-size: 45px;
+    }
+
+    #hero-container {
+        height: auto;
+    }
+
+    form {
+        background-color: white;
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%
+     }
+
+    
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    main {
+        background-color: gray;
+    }
+}
+
