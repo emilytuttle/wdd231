@@ -44,12 +44,10 @@ showData()
 
 box = document.getElementById("form-info-container")
 
-function showOnScreen() {
-    box.innerHTML = `
+
+    box.textContent = "Thank You! Your response has been recorded."
+    `
     <h3>Thank You! Your response has been recorded.</h3>
     <p>${usableData[0]}</p>
     `
-}
-
-showOnScreen()
 
