@@ -6,73 +6,76 @@ currentYear.textContent = year
 let last = document.getElementById("lastModified")
 last.textContent = lastModif
 
-const products = [
+const levels = [
     {
-      id: 'fc-1888',
-      name: "flux capacitor",
-      averagerating: 4.5
+      name: 'NP Membership',
+      cost: "Free",
+      benefits: "For non profit organizations, training, and advertising included"
     },
     {
-      id: 'fc-2050',
-      name: "power laces",
-      averagerating: 4.7
+        name: 'Bronze Membership',
+        cost: "$100",
+        benefits: "Includes trainings and advertising"
     },
     {
-      id: 'fs-1987',
-      name: "time circuits",
-      averagerating: 3.5
+        name: 'Silver Membership',
+        cost: "$200",
+        benefits: "Inludes training, advertising, and special events"
     },
     {
-      id: 'ac-2000',
-      name: "low voltage reactor",
-      averagerating: 3.9
-    },
-    {
-      id: 'jj-1969',
-      name: "warp equalizer",
-      averagerating: 5.0
+        name: 'Gold Membership',
+        cost: "$300",
+        benefits: "Includes training, advertising, special events, and event discounts"
     }
   ];
-  let dropdown = document.getElementById('product-select')
-
-function dropdownList() {
-    
-    for (let i=0; i < products.length; i++) {
-        const dropdownItem = document.createElement('option')
-        let object = products[i]
-        dropdownItem.textContent = object.name
-        dropdownItem.id = object.id
-        dropdown.appendChild(dropdownItem)
-        
-
-    }
-}
-
-dropdownList()
-
-let form = document.getElementById('form')
-const formCount = () => {
-    
-    let count = localStorage.getItem('formCount')
-    count = Number(localStorage.getItem('formCount')) + 1
-    localStorage.setItem('formCount', count)
-    
-
-}
-
+  
 submitButton = document.getElementById('submit-button')
 
+details = document.getElementById("membership-details")
+innerDetails = document.getElementById("inner-details")
 
-formCountDisplay = document.getElementById('form-count-display')
+function displayMembershipDetails(memberLevel) {
+    innerDetails.innerHTML = '';
+    innerDetails.innerHTML = `
+    
+    <h3>${memberLevel.name}</h3>
+    <p>${memberLevel.cost}</p>
+    <p>${memberLevel.benefits}</p>
+    `
 
-function display() {
-    let displayAmount =(localStorage.getItem("formCount"))
-    formCountDisplay.textContent = displayAmount
 }
 
 
 
-var field = document.querySelector('#form-date');
-var date = Date.now();
-// Set the date
-field.value = date;
+
+
+npButton = document.getElementById("np-button")
+bronzeButton = document.getElementById("bronze-button")
+silverButton = document.getElementById("silver-button")
+goldButton = document.getElementById("gold-button")
+
+closer = document.querySelector("#close-modal")
+    
+closer.addEventListener("click", ()=>{
+        details.close();
+    })
+
+
+
+npButton.addEventListener("click", () => {
+    details.showModal();
+    displayMembershipDetails(levels[0])
+})
+bronzeButton.addEventListener("click", ()=> {
+    details.showModal();
+    displayMembershipDetails(levels[1])
+})
+silverButton.addEventListener("click", ()=> {
+    details.showModal();
+    displayMembershipDetails(levels[2])
+})
+goldButton.addEventListener("click", ()=> {
+    details.showModal();
+    displayMembershipDetails(levels[3])
+})
+

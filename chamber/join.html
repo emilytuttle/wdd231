@@ -32,8 +32,8 @@
         <nav id="animateme">
             <button id="myButton"></button>
             <ul class="menuLinks">
-                <li><a href="#" title="Home">Home</a></li>
-                <li><a href="#" title="Directory">Directory</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="directory.html" title="Directory">Directory</a></li>
                 <li><a href="#" title="Join">Join</a></li>
                 <li><a href="#" title="Discover">Discover</a></li>
             </ul>
@@ -42,47 +42,59 @@
     <main>
         <div id="hero-container">
             <img src="images/hero.jpeg" alt="American Fork" id="hero-img" loading="lazy">
-            <div id="keynote-button">Keynote Tickets</div>
+    
+        </div>
+        <div id="membership-types-contain">
+            <dialog id="membership-details">
+                <button id="close-modal">X</button>
+                <div id="inner-details"></div>
+            </dialog>
+            <div class="detail-button" id="np-button">NP Membership</div>
+            <div class="detail-button" id="bronze-button">Bronze Membership</div>
+            <div class="detail-button" id="silver-button">Silver Membership</div>
+            <div class="detail-button" id="gold-button">Gold Membership</div>
         </div>
         
-        <form method="get" action="review.html" id="form">
+        <form method="get" action="thanks.html" id="form">
             <fieldset>
-                <p class="label">First Name: &lpar;required&rpar;</p>
+                <label class="label">First Name: &lpar;required&rpar;</label>
     
                 <input type="text" required autocomplete="given-name" id="first-name-input" name="first-name" title="first-name">
             </fieldset>
             <fieldset>
-                <p class="label">Last Name: &lpar;required&rpar;</p>
+                <label class="label">Last Name: &lpar;required&rpar;</label>
     
                 <input type="text" required autocomplete="family-name" id="last-name-input" name="last-name" title="last-name">
             </fieldset>
             <fieldset>
-                <p class="label">Organizational Title: &lpar;required&rpar;</p>
+                <label class="label">Organizational Title: &lpar;required&rpar;</label>
     
                 <input type="text" required autocomplete="organization-title" id="organization-title" name="organization-title" title="organization-title">
             </fieldset>
             <fieldset>
-                <p class="label">Email: &lpar;required&rpar;</p>
+                <label class="label">Email: &lpar;required&rpar;</label>
     
                 <input type="email" required autocomplete="email" id="email" name="email" title="email" placeholder="email1@email.com">
             </fieldset>
             <fieldset>
-                <p class="label">Phone Number: &lpar;required&rpar;</p>
+                <label class="label">Phone Number: &lpar;required&rpar;</label>
     
                 <input type="tel" required autocomplete="tel" id="phone" name="phone" title="phone">
             </fieldset>
             <fieldset>
-                <p class="label">Business Name: &lpar;required&rpar;</p>
+                <label class="label">Business Name: &lpar;required&rpar;</label>
     
                 <input type="text" required autocomplete="organization" id="business-name" name="business-name" title="business-name">
             </fieldset>
+
+            
 
             <fieldset>
                 <legend class="label">Membership Level &lpar;required&rpar;:</legend>
               
                 <div>
                     <input type="radio" id="np-membership" name="level" value="np-membership" checked required />
-                    <label for="np-star">NP Membership</label>
+                    <label for="np-membership">NP Membership</label>
                 </div>
                 <div>
                     <input type="radio" id="bronze-membership" name="level" value="bronze-membership" required />
@@ -101,11 +113,11 @@
 
             
                 <fieldset>
-                    <label for="description" class="label">Business/Organization Description:</label>
+                    <label for="description" id="description" class="label">Business/Organization Description:</label>
                     <textarea name="description" title="description"></textarea>
                 </fieldset>
 
-                <input id="form-date" value="" name="form-date" type="hidden">
+                <input id="form-date" value="test" name="form-date" type="hidden">
            
             
                 <button type="submit" id="submit-button" onclick="formCount()">Submit</button>

@@ -70,6 +70,7 @@ ul.menuLinks.open {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    background-color: white;
 }
 
 #city-title {
@@ -202,3 +203,102 @@ footer {
     text-align: center;
     padding-top: 50px;
 }
+
+#membership-details {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: .25rem;
+    padding:1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    z-index: -2;
+    color: black;
+   
+}
+
+#membership-details h3 {
+    color: black;
+    padding: 30px;
+    font-size: 30px;
+}
+
+dialog p {
+    padding: 10px;
+    text-align: center;
+}
+
+dialog {
+   
+    width: 85%;
+    height: 30%;
+    top: 20%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+dialog button {
+    position: absolute;
+    top: 20px;
+    width: 45px;
+    right: 20px;
+    text-align: center;
+}
+
+#close-modal:hover {
+   font-weight: bold;
+   background-color: #1b1b46;
+}
+
+::backdrop {
+    background-color: rgba(0,0,0,0,5);
+}
+
+dialog button {    
+    padding: .5rem 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+#membership-types-contain {
+    background-color: white;
+    width: 80%;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-direction: column;
+}
+@keyframes grow {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.detail-button {
+    background-color: #1b1b46;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.detail-button {
+    animation-duration: 1s;
+    animation-name: grow;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+  }
+
+.detail-button:hover {
+    cursor: pointer;
+    padding: 25px;
+}
+
