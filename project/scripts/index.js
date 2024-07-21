@@ -132,7 +132,6 @@ function doLocalStorage() {
         messageContainer.textContent = "Welcome to our site!"
     }
     else{
-        localStorage.getItem("lastVisited")
         localStorage.setItem("lastVisited", new Date()) 
         messageContainer.textContent = "Welcome back to our site!"
     }
