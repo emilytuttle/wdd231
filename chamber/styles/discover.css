@@ -17,11 +17,11 @@ nav {
     background-color: #282870;
 }
 
-#myButton::before {
+#button-menu::before {
     content: "\2630"
 }
 
-#myButton {
+#button-menu {
     font-size: 2rem;
     background: none;
     border: none;
@@ -94,26 +94,10 @@ ul.menuLinks.open {
     object-fit: cover;
 }
 
-#keynote-button {
-    padding: 10px;
-    background-color:#282870;
-    text-align: center;
-    color: white;
-    border-radius: 15px;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    border: 1px solid white;
-    font-size: 24px;
-}
-
-#keynote-button:hover {
-    cursor: pointer;
-    border: 1px solid rgb(102, 102, 102);
-}
 
 .wayfind-link {
     font-weight: bold;
+    background-color: #1b1b46;
 }
 
 
@@ -139,16 +123,72 @@ footer p {
 
 
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-
 footer {
     
     bottom: 0px;
+}
+
+
+/* calendar  */
+
+table {
+    background-color: lightgrey;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+    padding: 20px
+}
+
+/* pics */
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fig-img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    padding-top: 40px;
+    padding-bottom: 10px
+
+}
+/* #grid-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+} */
+
+#welcome-message {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#home-content-container {
+    text-align: center;
+    
+}
+
+ 
+.home-content-header p {
+    padding: 10px
+}
+
+.weather p {
+    padding: 3px
+}
+
+.weather {
+    margin: 20px;
+}
+#current-weather, #weather-forecast, #events {
+       
+    border-radius: 20px;
+    margin: 40px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

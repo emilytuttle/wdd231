@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Chamber Join - Emily Tuttle</title>
-    <meta name="description" content="WDD 231 - Chamber -  Emily Tuttle, Home Page, Join">
+    <title>WDD 231 - Chamber Discover - Emily Tuttle</title>
+    <meta name="description" content="WDD 231 - Chamber -  Emily Tuttle, Home Page, Discover">
     <meta name="author" content="Emily Tuttle">
     <meta property="og:title" content="Chamber of Commerce" />
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftheculturetrip.com%2Fnorth-america%2Fusa%2Futah%2Farticles%2Ftop-10-restaurants-in-american-fork-utah-great-local-food&psig=AOvVaw1b662tMvMKw052ZZlG9rlX&ust=1719028963769000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCIiNloro64YDFQAAAAAdAAAAABAE" />
-    <meta property="og:url" content="https://emilytuttle.github.io/wdd231/chamber/join" />
+    <meta property="og:url" content="https://emilytuttle.github.io/wdd231/chamber/discover" />
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/discover.css">
     <link rel="stylesheet" href="styles/dicover-large.css">
@@ -30,7 +30,7 @@
         </div>
         
         <nav id="animateme">
-            <button id="myButton"></button>
+            <div id="button-menu"></div>
             <ul class="menuLinks">
                 <li><a href="index.html" title="Home">Home</a></li>
                 <li><a href="directory.html" title="Directory">Directory</a></li>
@@ -42,7 +42,158 @@
     <main>
         <div id="hero-container">
             <img src="images/hero.jpeg" alt="American Fork" id="hero-img" loading="lazy">
+            <!-- <source srcset="images/" media="(min-width: 38rem)" id="hero-img" loading="lazy">
+            <img src="images/hero.png" id=hero-img alt="hero"loading="lazy"> -->
         
+        </div>
+        <div id="grid-container">
+            <div id="grid-left">
+                <h3 id="welcome-message"></h3>
+                <table
+                    cellspacing="21" cellpadding="21">
+         
+       
+          
+ 
+                    <thead>
+                        <tr>
+                            <th>Sun</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="home-content-container">
+                    <div id="events" class="home-box">
+                        <div class="home-content-header" >
+                            <h3>Events</h3>
+                            <p>New mayor meeting</p>
+                            <p>Move county jail</p>
+                            <p>New sheriff in town</p>
+                        </div>
+                    </div>
+                    <div id="current-weather" class="home-box">
+                        <div class="home-content-header">
+                            <h3>Current Weather</h3>
+                        </div>
+                        <div id="current-weather-whole" class="weather">
+                            <img src="images/partlyCloudy.png" alt="Weather Icon" id="weather-icon" width="70" loading="lazy">
+                            <div id="current-weather-info-container" class="weather">
+                                <p>75° F</p>
+                                <p>Partly Cloudy</p>
+                                <p>High: 85° F</p>
+                                <p>Low: 52° F</p>
+                                <p>Humidity: 34%</p>
+                                <p>Sunrise: 7:30am</p>
+                                <p>Sunset: 9:59pm</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="weather-forecast" class="home-box">
+                        <div class="home-content-header">
+                            <h3>Weather Forecast</h3>
+                        </div>
+                        <div id="forecast" class="weather">
+                            <p>Today: 90°F</p>
+                            <p>Friday: 68°F</p>
+                            <p>Saturday: 71°F</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="grid-right">
+                <figure>
+                    <img src="images/afcanyonsmall.png" alt="American Fork Canyon" class="fig-img" loading="lazy">
+                    <figcaption>American Fork Canyon</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/afmainsmall.png" alt="Main Street" class="fig-img" loading="lazy">
+                    <figcaption>American Fork Main Street</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/afneighborhoodsmall.png" alt="Neighborhood" class="fig-img" loading="lazy">
+                    <figcaption>Nice Neighborhoods</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/afschoolsmall.png" alt="Schools" class="fig-img" loading="lazy">
+                    <figcaption>Nice Schools</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/afparksmall.png" alt="Parks" class="fig-img" loading="lazy">
+                    <figcaption>Nice Parks</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/aflibrarysmall.png" alt="Parks" class="fig-img" loading="lazy">
+                    <figcaption>Beautiful Library</figcaption>
+                </figure>
+                
+            </div>
+
         </div>
 
        

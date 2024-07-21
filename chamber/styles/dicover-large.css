@@ -1,6 +1,6 @@
 @media only screen and (min-width: 38rem) {
     /* For nav bar */
-    #myButton {
+    #button-menu {
         display: none;
     }
 
@@ -36,4 +36,35 @@
         flex-direction: row;
         justify-content: space-between;
     }
+
+    .fig-img {
+        width: 500px;
+        height: auto;
+    }
+
+    .fig-img:hover {
+        width: 520px;
+    }
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #events {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 20px;
+        margin: 40px;
+        padding: 20px;
+    }
+
+    #grid-left {
+        display: flex;
+        align-items: center;
+        
+        flex-direction: column;
+    }
+
+    
+
 }
