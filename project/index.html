@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Climbing Project - Emily Tuttle</title>
+    <meta name="description" content="WDD 231 - Climbing Project -  Emily Tuttle, Home Page">
+    <meta name="author" content="Emily Tuttle">
+    <meta property="og:title" content="Climbing Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Ftheculturetrip.com%2Fnorth-america%2Fusa%2Futah%2Farticles%2Ftop-10-restaurants-in-american-fork-utah-great-local-food&psig=AOvVaw1b662tMvMKw052ZZlG9rlX&ust=1719028963769000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCIiNloro64YDFQAAAAAdAAAAABAE">
+    <meta property="og:url" content="https://emilytuttle.github.io/wdd231/project/index.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+
+</head>
+<body>
+    <header>
+
+        
+        <nav id="animateme">
+            <h1 id="main-title">Climbing Project</h1>
+            <button id="myButton"></button>
+            <ul class="menuLinks">
+                <li><a href="#" title="Home" class="wayfind-link">Home</a></li>
+                <li><a href="toprope.html" title="toprope">Top Rope</a></li>
+                <li><a href="lead.html" title="lead">Lead</a></li>
+                <li><a href="bouldering.html" title="bouldering">Bouldering</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="hero-container">
+            <img id="hero-img" loading="lazy" src="https://www.rei.com/dam/rinckenberger_111815_1406_main_lg_web_med.jpeg">
+
+        </div>
+
+        
+        
+        <div id="form-contain">
+            <h2 id="welcome-message"></h2>
+            <p class="info-box">There are multiple kinds of rock climbing, including top rope, lead, bouldering, and more. Climbing can seem intimidating to beginners, but there are ways to prevent accidents and stay safe. Many people begin their rock climbing journey in a climbing gym. Climbing gyms often have many of the kinds of climbing. Otherwise, people can climb outside for a whole new experience!</p>
+            <form method="get" id="form">
+                <h3>Do you have any climbing questions? We're here to help!</h3>
+                <fieldset>
+                    <p class="label">How did you find us:</p>
+        
+                    <select name="how-select" id="how-select">
+                    <option value="select" disabled>Select an answer ...</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend class="label">Rate Your Climbing Knowledge/Experience:</legend>
+                  
+                    <div>
+                        <input type="radio" id="none" name="rating" value="none" checked />
+                        <label for="none">None</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="a-little" name="rating" value="a-little"/>
+                      <label for="a-little">A Little</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="average" name="rating" value="average"  />
+                      <label for="average">Average</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="quite-a-bit" name="rating" value="quite-a-bit"  />
+                        <label for="quite-a-bit">Quite a bit</label>
+                      </div>
+                      <div>
+                        <input type="radio" id="a-lot" name="rating" value="a-lot"  />
+                        <label for="a-lot">A Lot</label>
+                      </div>
+                  </fieldset>
+    
+                  <fieldset>
+                    <p class="label">Which kinds of climbing do you want to know more about?:</p>
+                    <input type="checkbox" id="top-rope" name="top-rope" value="top-rope">
+                    <label for="top-rope"> Top Rome</label><br>
+                    <input type="checkbox" id="lead" name="lead" value="lead">
+                    <label for="lead"> Lead</label><br>
+                    <input type="checkbox" id="bouldering" name="bouldering" value="bouldering">
+                    <label for="bouldering"> Bouldering</label><br>
+                  </fieldset>
+                  <fieldset class="vertical">
+                    <label for="written-review" class="label">What specific questions do you have?:</label>
+                    <textarea id="written-review" name="written-review"></textarea>
+                  </fieldset>
+                    <fieldset class="vertical">
+                        <label for="user-name" class="label">Your Name:</label>
+                        <input type="text" id="user-name" name="user-name" />
+                    </fieldset>
+                
+                        <button type="submit" id="submit-button" >Submit</button>
+        
+            </form>
+
+            <div id="weather-container">
+                <h3>Don't forget to check the weather!</h3>
+                <p>Good conditions make climbing more fun,so here's the current weather and the two day forecast for Utah's capital, Salt Lake City!</p>
+                <div id="current-and-future">
+                    <div id="current-weather" class="home-box">
+                        <div class="home-content-header">
+                            <h3>Current Weather</h3>
+                        </div>
+    
+                        <div id="current-weather-whole">
+                            <p>Current Temp: <span id="current-temp"></span>°F</p>
+                            <p>Current Weather: <span id="current-weather-desc"></span></p>
+                        </div>
+                    </div>
+                    <div id="weather-forecast" class="home-box">
+                        <div class="home-content-header">
+                            <h3>Weather Forecast</h3>
+                        </div>
+                        <div id="forecast">
+                            <p>Today: <span id="todays-temp"></span>°F</p>
+                            <p>Tomorrow: <span id="tomorrow-temp"></span>°F</p>
+                            <p>2 Days: <span id="two-temp"></span>°F</p>
+                        </div>
+                    </div>
+                    
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>        
+        
+        
+        
+        
+        
+    </main>
+    <footer>
+       
+       
+        <div id="repeat-info">
+            <p>WDD231 Class Project</p>
+            <p>Emily Tuttle</p>
+            <p>&copy; <span id="currentyear"></span>Climbing Project</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </div>
+       
+    </footer>
+    
+</body>
+
+</html>

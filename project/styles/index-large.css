@@ -1,0 +1,75 @@
+@media only screen and (min-width: 38rem) {
+    /* For nav bar */
+    #myButton {
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: #1b1b46;
+    }
+
+    /* For Header (minus nav) */
+
+    #city-header {
+        flex-direction: row;
+    }
+
+    #city-title {
+        padding-left: 30px;
+    }
+
+    #american-fork {
+        font-size: 45px;
+    }
+
+    #hero-container {
+        height: auto;
+    }
+
+    /* home section */
+
+    #home-content-container {
+        flex-direction: row;
+    }
+
+    #hero-img {
+        height: auto;
+    }
+
+
+    form {
+        width: 50%;
+        border: 1px solid rgb(0, 63, 30);
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .info-box {
+        width: 70%
+    }
+
+    #form-contain {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: rgb(216, 216, 216);
+    }
+
+    #current-and-future {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    #container {
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -14,7 +14,7 @@
 /* For the nav bar */
 
 nav {
-    background-color: #282870;
+    background-color: rgb(4, 104, 1);;
 }
 
 #myButton::before {
@@ -33,7 +33,7 @@ nav {
 }
 
 ul.menuLinks li a {
-    border: #1b1b46 solid 1px;
+    border: rgb(0, 0, 0);
     display: block;
     padding: .75rem 2vw;
     color: white;
@@ -58,67 +58,16 @@ ul.menuLinks.open {
     text-align: center;
 }
 
-/* For Header (minus nav) */
-
-#city-logo {
-    margin: 20px;
+.wayfind-link {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: rgb(3, 70, 0);
 }
-
-#city-header {
-    color:#1b1b46;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: white;
-}
-
-#city-title {
-    text-align: center;
-   
-}
-
-#american-fork {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-}
-
-#hero-container {
-    width: 100vw;
-    height: 240px;
-    position: relative;
-}
-#hero-img {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-}
-
-#keynote-button {
-    padding: 10px;
-    background-color:#282870;
-    text-align: center;
-    color: white;
-    border-radius: 15px;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    border: 1px solid white;
-    font-size: 24px;
-}
-
-#keynote-button:hover {
-    cursor: pointer;
-    border: 1px solid rgb(102, 102, 102);
-}
-
-
-
 
 /* footer */
 
 footer {
-    background-color: #282870;
+    background-color:rgb(4, 104, 1);
     color: white;
     padding: 20px;
     display: flex;
@@ -133,23 +82,40 @@ footer p {
     margin: 20px
 }
 
+/* ///////////////////////////////// */
+
+
+main {
+    background-color: white;
+}
+
+#main-title {
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+}
+
+#hero-container {
+    width: 100vw;
+}
+#hero-img {
+    width: 100%;
+    max-height: 400px;
+    background-color: rgb(1, 68, 33);
+    object-fit: contain;
+}
+
+
 
 form {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 90%;
-    padding: 20px;
-   
-    margin: 10px;
+    width: 100%;
+    padding: 30px;
+    margin: 30px;
 
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 fieldset {
@@ -162,17 +128,13 @@ fieldset {
 }
 
 .label {
-    color: rgb(14, 108, 249);
+    color: rgb(0, 63, 30);
     padding-bottom: 10px;
 }
 
 .vertical {
     display: flex;
     flex-direction: column;
-}
-
-#user-name {
-    height: 30px;
 }
 
 legend {
@@ -184,7 +146,7 @@ textarea {
 }
 
 button {
-    background-color:rgb(14, 108, 249);
+    background-color: rgb(4, 104, 1);
     color: white;
     width: 200px;
     height: 50px;
@@ -194,15 +156,77 @@ button {
 
 }
 
-footer {
+button:hover {
     
-    bottom: 0px;
+    background-color:rgb(0, 63, 30);
 }
 
-.response {
-    text-align: center;
-    padding-top: 50px;
+#form-contain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
 }
+
+/* information boxes */
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.info-box {
+    padding: 20px;
+}
+
+#info-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#climb-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.climb-card {
+    width: 400px;
+    background-color: rgb(229, 226, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.climb-card:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#weather-container {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#weather-container h3, p {
+    padding: 10px;
+}
+
+/* dialog */
 
 #membership-details {
     border: 1px solid rgba(0,0,0,0.1);
@@ -213,6 +237,7 @@ footer {
     width: 90%;
     max-width: 600px;
     z-index: -2;
+    
     color: black;
    
 }
@@ -222,6 +247,7 @@ footer {
     padding: 30px;
     font-size: 30px;
 }
+
 
 dialog p {
     padding: 10px;
@@ -255,31 +281,12 @@ dialog button {
 }
 
 ::backdrop {
-    background-color: rgba(0,0,0,5);
+    background-color: rgba(0,0,0,.5);
 }
 
 dialog button {    
     padding: .5rem 1rem;
     border: 1px solid rgba(0,0,0,0.1);
-}
-
-#membership-types-contain {
-    background-color: white;
-    width: 80%;
-    margin: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 20px;
-    flex-direction: column;
-}
-@keyframes grow {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.2);
-    }
 }
 
 .detail-button {
@@ -300,17 +307,4 @@ dialog button {
 .detail-button:hover {
     cursor: pointer;
     padding: 25px;
-}
-
-#form-info-container {
-    width: 100%;
-    height: 140px;
-    z-index: 5;
-    background-color: white;
-    color: black;
-}
-
-
-.wayfind-link {
-    font-weight: bold;
 }
