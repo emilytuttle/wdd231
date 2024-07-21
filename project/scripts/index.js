@@ -125,13 +125,17 @@ forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=40.7608&lon=
 
 messageContainer = document.getElementById('welcome-message')
 
+function doLocalStorage() {
 
-if(localStorage.getItem("lastVisited")==null){
-    // consider first visit
-    localStorage.setItem(new Date()) // your choice of format
+    if(localStorage.getItem("lastVisited")==null){
+        localStorage.setItem("lastVisited", new Date()) 
+        messageContainer.textContent = "Welcome to our site!"
+    }
+    else{
+        localStorage.getItem("lastVisited")
+        localStorage.setItem("lastVisited", new Date()) 
+        messageContainer.textContent = "Welcome back to our site!"
+    }
 }
-else{
-    const lastVisited = localStorage.getItem("lastVisited")
-    // your logic to calculate days based on format stored.
-    localStorage.setItem(new Date()) // current visit for future calculation
-}
+
+doLocalStorage()
